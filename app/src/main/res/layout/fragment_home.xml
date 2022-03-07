@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/ic_profile"
+    tools:context=".ui.FragmentHome">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginStart="50dp"/>
+
+    <TextView
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="To NoYu"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="50sp"/>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_set">
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            tools:src="@tools:sample/avatars"
+            android:layout_width="140dp"
+            android:layout_height="200dp"
+            android:paddingStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_bold"
+                android:ellipsize="end"
+                android:text="@string/judul"
+                android:textSize="20sp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tv_item_usia"
+                        android:layout_width="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/white"
+                        android:text="@string/usia"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textSize="12sp"/>
+                    <TextView
+                        android:id="@+id/tv_item_genre"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/genre"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textSize="12sp"/>
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_rating"/>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginStart="8dp"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:text="@string/imdb"/>
+
+                        <TextView
+                            android:id="@+id/tv_item_rating"
+                            android:layout_marginStart="8dp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/montserrat_regular"
+                            android:textSize="12sp"
+                            android:text="@string/rating"/>
+
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/tv_item_sinopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="@string/sinopsis"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
